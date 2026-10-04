@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="Servlet1" method="post">
+<h2>Registro</h2>
+
+<label>Name:<input type="text" name="userName" minlength="3" maxlength="40" required/></label><br/><br/>
+
+<label>Apellido:<input type="text" name="apellido" minlength="3" maxlength="40" required/></label><br/><br/>
+
+<label>Edad:<input type="number" name="edad" min="18" max="120" required/></label><br/><br/>
+
+Genero:<select name="genero" required>
+<option value="">-- Selecciona --</option>
+<option value="Masculino">Masculino</option>
+<option value="Femenino">Femenino</option>
+<option value="Otro">Otro</option>
+</select><br/><br/>
+
+Intereses:<br/>
+<label><input type="checkbox" name="intereses" value="Deportes"> Deportes</label><br/>
+<label><input type="checkbox" name="intereses" value="Musica"> Musica</label><br/>
+<label><input type="checkbox" name="intereses" value="Lectura"> Lectura</label><br/>
+<label><input type="checkbox" name="intereses" value="Otro"> Otro</label><br/><br/>
+
+<label>Correo:<input type="email" name="correo" required/></label><br/><br/>
+
+<label><input type="checkbox" name="acepta" value="true"> Me gustaria recibir notificaciones</label><br/><br/>
+
+<input type="submit" value="Enviar"/>
+</form>
+
+</body>
+</html>
