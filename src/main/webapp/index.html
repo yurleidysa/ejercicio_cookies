@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Insert title here</title>
+<title>Ejercicio_cookies</title>
 </head>
 <body>
 
 <form action="Servlet1" method="post">
 <h2>Registro</h2>
 
-<label>Name:<input type="text" name="userName" minlength="3" maxlength="40" required/></label><br/><br/>
+<label>Name:<input type="text" name="userName" minlength="3" maxlength="40" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{3,40}"
+       title="No se permiten numeros ni simbolos." required/></label><br/><br/>
 
-<label>Apellido:<input type="text" name="apellido" minlength="3" maxlength="40" required/></label><br/><br/>
+<label>Apellido:<input type="text" name="apellido" minlength="3" maxlength="40" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{3,40}"
+       title="No se permiten numeros ni símbolos." required/></label><br/><br/>
 
 <label>Edad:<input type="number" name="edad" min="18" max="120" required/></label><br/><br/>
 
